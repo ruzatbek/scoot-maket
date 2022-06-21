@@ -1,0 +1,89 @@
+.hero {
+    
+    .container-big {
+        background-image: url("./../../images/hero-img.jpg");
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    &__inner-wrapper {
+        
+    }
+    
+    &__container {
+        padding: 152px 0;
+        margin-bottom: 160px;
+        
+    }
+    
+    &__wrapper {
+        max-width: 500px;
+        width: 100%;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    &__heading {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: $snow;
+        
+    }
+    
+    &__text {
+        position: relative;
+        margin-left: 95px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $snow;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            transform: translate(-57px, -50%);
+            display: inline-block;
+            width: 202px;
+            height: 15px;
+            background-color: $yellow;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translate(57px, -8%);
+            display: inline-block;
+            width: 447px;
+            height: 138px;
+            background-image: url("./../../images/hero-line.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+    }
+    
+    &__button {
+        margin-left: 95px;
+        width: 180px;
+        background: $yellow;
+        text-decoration: none;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: $snow;
+        padding: 14px 39px;
+        
+    }
+    
+}
+

@@ -1,0 +1,89 @@
+.plan {
+    background-image: url("../images/line.png");
+    background-repeat: no-repeat;
+    background-size: 974px 15px;
+    background-position: calc(50% - 268px) calc(50% - 112px);
+    
+    
+    &__container {
+        
+    }
+    
+    &__nav {
+        
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 147px;
+        margin-top: 160px;
+    }
+    
+    
+    
+    &__item {
+        position: relative;
+        margin-right: 30px;
+        padding-top: 140px;
+    }
+    
+    &__item:nth-child(2)::before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96px;
+        height: 96px;
+        background-image: url("../images/scooter.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+    &__item :nth-child(1)::before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96px;
+        height: 96px;
+        background-image: url("../images/phone.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+    
+    &__item:nth-child(3) ::before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 96px;
+        height: 96px;
+        background-image: url("../images/big-scooter.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+    
+    
+    &__heading {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: $dark-navy;
+        margin-bottom: 27px;
+    }
+    
+    &__text {
+        max-width: 350px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: $dim-grey;
+        
+    }
+}
+
